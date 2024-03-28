@@ -16,8 +16,7 @@
 title: My Homepage
 subtitle: Under construction
 logo: "/assets/images/logo.png"
-email: guilherme.guigoruiz@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "minimal_mistakes_skin:"
   Guilherme Ruiz personal homepage.
 minimal_mistakes_skin: dark
 search: true
