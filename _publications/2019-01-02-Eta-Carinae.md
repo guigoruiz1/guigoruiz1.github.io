@@ -1,0 +1,12 @@
+---
+title: "Distinguishing Circumstellar from Stellar Photometric Variability in Eta Carinae"
+collection: publications
+category: undergrad
+permalink: /publication/2019-01-02-Eta-Carinae
+date: 2019-01-02
+authors: Augusto Damineli, Eduardo Fernández-Lajús, Leonardo A. Almeida, Michael Francis Corcoran, Daniel S. C. Damineli, Ted R. Gull, Kenji Hamaguchi, Desmond John Hillier, Francisco J. Jablonski, Thomas I. Madura, Anthony F. J. Moffat, Felipe Navarete, Noel D. Richardson, Guilherme F. Ruiz, Nicolás E. Salerno, Maria Cecilia Scalia, Gerd. Weigelt
+venue: 'Monthly Notices of the Royal Astronomical Society, Volume 484, Issue 1, March 2019, Pages 1325–1346'
+paperurl: 'https://academic.oup.com/mnras/article/484/1/1325/5289420'
+---
+
+The interacting binary Eta Carinae remains one of the most enigmatic massive stars in our Galaxy despite over four centuries of observations. In this work, its light curve from the ultraviolet to the near-infrared is analysed using spatially resolved HST observations and intense monitoring at the La Plata Observatory, combined with previously published photometry. We have developed a method to separate the central stellar object in the ground-based images using HST photometry and applying it to the more numerous ground-based data, which supports the hypothesis that the central source is brightening faster than the almost-constant Homunculus. After detrending from long-term brightening, the light curve shows periodic orbital modulation (ΔV ∼ 0.6 mag) attributed to the wind-wind collision cavity as it sweeps around the primary star and it shows variable projected area to our line-of-sight. Two quasi-periodic components with time scales of 2-3 and 8-10 yr and low amplitude, ΔV < 0.2 mag, are superimposed on the brightening light-curve, being the only stellar component of variability found, which indicates minimal stellar instability. Moreover, the light curve analysis shows no evidence of `shell ejections' at periastron. We propose that the long-term brightening of the stellar core is due to the dissipation of a dusty clump in front of the central star, which works like a natural coronagraph. Thus, the central stars appear to be more stable than previously thought since the dominant variability originates from a changing circumstellar medium. We predict that the brightening phase, due mainly to dust dissipation, will be completed around 2032 ± 4 yr, when the star will be brighter than in the 1600's by up to ΔV ∼ 1 mag.
