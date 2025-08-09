@@ -1,10 +1,10 @@
 ---
 title: "Distinguishing Circumstellar from Stellar Photometric Variability in Eta Carinae"
 collection: publications
-category: undergrad
+category: manuscripts
 permalink: /publication/2019-01-02-Eta-Carinae
 date: 2019-01-02
-authors: Augusto Damineli, Eduardo Fernández-Lajús, Leonardo A. Almeida, Michael Francis Corcoran, Daniel S. C. Damineli, Ted R. Gull, Kenji Hamaguchi, Desmond John Hillier, Francisco J. Jablonski, Thomas I. Madura, Anthony F. J. Moffat, Felipe Navarete, Noel D. Richardson, Guilherme F. Ruiz, Nicolás E. Salerno, Maria Cecilia Scalia, Gerd. Weigelt
+authors: Augusto Damineli, Eduardo Fernández-Lajús, Leonardo A. Almeida, Michael Francis Corcoran, Daniel S. C. Damineli, Ted R. Gull, Kenji Hamaguchi, Desmond John Hillier, Francisco J. Jablonski, Thomas I. Madura, Anthony F. J. Moffat, Felipe Navarete, Noel D. Richardson, **Guilherme F. Ruiz**, Nicolás E. Salerno, Maria Cecilia Scalia, Gerd. Weigelt
 venue: 'Monthly Notices of the Royal Astronomical Society, Volume 484, Issue 1, March 2019, Pages 1325–1346'
 paperurl: 'https://academic.oup.com/mnras/article/484/1/1325/5289420'
 ---
