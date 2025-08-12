@@ -34,7 +34,6 @@
       {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
-      {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
 
       <!-- Authors -->
       <!-- {% if post.authors %}
@@ -43,7 +42,7 @@
 
       <!-- Venue / Publication name -->
       {% if post.venue %}
-      <p class="archive__item-venue">Published in <i>{{ post.venue }}</i></p>
+      <p class="archive__item-venue" itemprop="description">Published in <i>{{ post.venue }}</i></p>
       {% endif %}
 
       <!-- Full citation (optional, often includes title, authors, venue, year) -->
