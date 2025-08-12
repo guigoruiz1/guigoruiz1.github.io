@@ -11,35 +11,91 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Particle Physics, University of Manchester, 2018 – Current  
+  * Project: “Study of solar neutrinos with a large pixelated liquid Argon detector”  
+  * Supervisor: Stefan Söldner-Remdold  
+  * Bullet point  
+  * Bullet point  
+
+* M.Sc. in Physics, University College London, 2018 – 2020  
+  * Project: “Exotic Contributions to Double Beta Decay”  
+  * Supervisor: Frank Deppisch  
+  * Final result: Distinction (75.5%)  
+  * Thesis available on request  
+
+* B.Sc. in Physics with Astronomy, University of São Paulo, 2013 – 2018  
+  * Included all modules from physics plus core astronomy modules  
+  * Final Term Work: "The Light Curve of η Carinae: Intrinsic brightening or dust destruction?"  
+  * Supervisor: Augusto Damineli  
+  * Final grade: 7/10  
+  * Transcript available on request  
+
+* First joint ICTP-Trieste/ICTP-SAIFR School on Particle Physics, IFT-UNESP, 2018  
+  * Two-week course with six lecturers from different world-class universities  
+
+* Particle Physics Summer Course, University of São Paulo, 2017  
+  * One-week introductory course to particle physics  
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2020 – 2021: Network Control Manager  
+  * Amazon Logistics, London  
+  * Automation of reports and data processing through Python, SQL, and Excel  
+  * Managing stakeholders and customers, presenting data, and handling urgent requests  
+  * Balancing long-term strategic and short-term tactical projects  
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2019: Contestant  
+  * UCL Data Science Society Hackathon (with American Express & Microsoft)  
+  * Hosted at Microsoft Reactor London  
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* 2017: B.Sc. Final Term Work  
+  * University of São Paulo  
+  * Programmatic data collection and analysis (Python) to study η Carinae’s brightening  
+  * Data analysis of photometric data and development of a Python analysis code  
+
+* 2014 – 2016: Undergraduate Research with Scholarship  
+  * University of São Paulo  
+  * Assisted in construction and testing of GEM type detectors for ALICE experiment upgrade  
+  * Presented at the 23rd (2015) and 24th (2016) SIICUSP conferences  
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+* Git  
+* Arduino  
+* Java  
+* C++  
+* ROOT  
+* SQL  
+* HTML  
+* CSS  
+* LaTeX  
+* Mathematica
+* MS Office 
+  * Excel
+  * VBA  
+
+Certifications
+======
+* Private Pilot License – Brazilian Civil Aviation Authority (2018 – Present)  
+  * Credential ID: 349370  
+  * [ANAC CHT](http://sistemas.anac.gov.br/NovaCHT/ConsultaNovaCht)  
+  * Licensed for single engine piston aircraft  
+
+* Private Pilot License – UK Civil Aviation Authority (2024 – Present)  
+  * Credential ID: 000000  
+  * [CAA PPL](http://www.caa.co.uk)  
+  * Licensed for single engine piston aircraft  
+
+Projects
+======
+* [Yugiquery](http://guigoruiz1.github.io/yugiquery) – Python script to query and display Yu-Gi-Oh! data from [yugipedia](http://yugipedia.com)  
+* [Arduino Odometry](http://github.com/guigoruiz1/arduino-odometry) – Jupyter notebook to reconstruct inertial navigation data from Arduino sensors  
+
+OSS Contributions
+======
+* [TQDM Discord contrib fix](https://github.com/guigoruiz1/tqdm) – Implementation of Discord Rich Presence for tqdm progress bar using REST API  
+
 
 Publications
 ======
@@ -61,4 +117,6 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Institute of Physics’ LGBT+ Collective  
+  * Founding member and leadership officer  
+  * Created collective manifesto, managed social media/events, negotiated new student welfare policies, coordinated with student union  
