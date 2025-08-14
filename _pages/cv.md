@@ -78,13 +78,9 @@ Skills
 Certifications
 ======
 * Private Pilot License – Brazilian Civil Aviation Authority (2018 – Present)  
-  * Credential ID: 349370  
-  * [ANAC CHT](http://sistemas.anac.gov.br/NovaCHT/ConsultaNovaCht)  
   * Licensed for single engine piston aircraft  
 
 * Private Pilot License – UK Civil Aviation Authority (2024 – Present)  
-  * Credential ID: 000000  
-  * [CAA PPL](http://www.caa.co.uk)  
   * Licensed for single engine piston aircraft  
 
 Projects
