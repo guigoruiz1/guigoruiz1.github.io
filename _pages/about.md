@@ -11,6 +11,6 @@ redirect_from:
 
 **Welcome to my page!**
 
-I am a particle physicist and PhD candidate at the University of Manchester, where I study solar neutrinos using liquid argon time projection chambers (LArTPCs). My research is aimed at advancing LArTPC technology to enable more precise and comprehensive solar neutrino measurements. I hold an MSc in Physics from University College London and a BSc in Physics with Astronomy from the University of São Paulo.
+I am a particle physicist with a PhD from the University of Manchester, researching solar neutrino detection with liquid Argon time projection chambers (LArTPCs). My research is aimed at advancing LArTPC technology to enable more precise and comprehensive solar neutrino measurements. I hold an MSc in Physics from University College London and a BSc in Physics with Astronomy from the University of São Paulo.
 
 Alongside my academic work, I gained practical experience at Amazon Logistics in London, where I automated reports and data processing, collaborated with diverse stakeholders, and balanced strategic projects with urgent operational tasks. I also pursue software development as a personal interest and hold private aeroplane pilot licenses from Brazil and the UK.
