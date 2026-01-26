@@ -4,10 +4,10 @@ collection: talks
 type: "Talk"
 permalink: /talks/2015-SIICUSP
 venue: "24th SIICUSP"
-date: 2015-09-12
-# slidesurl: ''
+date: 2016-09-12
+slidesurl: /files/24-SIICUSP.pdf
 location: "São Paulo, Brazil"
 lang: pt
 ---
 
-The International Symposium on Scientific and Technological Initiation (SIICUSP) is an event held annually at the University of São Paulo and aims to disseminate the results of scientific and technological research projects carried out by undergraduate students from USP and other national and foreign institutions.
+Short presentation at the 24th International Symposium on Scientific and Technological Initiation (SIICUSP), an event held annually at the University of São Paulo that aims to disseminate the results of scientific and technological research projects carried out by undergraduate students from USP and other national and international institutions.

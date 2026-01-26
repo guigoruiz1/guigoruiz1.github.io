@@ -9,7 +9,7 @@
 {% if post.id %}
 {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
 {% else %}
-{% assign title = post.title %}
+{% assign title = post.title | strip %}
 {% endif %}
 
 <div class="{{ include.type | default: " list" }}__item">
@@ -49,7 +49,7 @@
 
     {% assign content_size = post.content | strip_html | strip_newlines | size %}
     {% if page.layout == "archive" %}
-    {% if content_size > 0 %}
+    {% if content_size > 0 and (post.collection == 'publications' or post.collection == 'talks') %}
     <details class="archive__item-abstract" style="margin-top: 0.5em;">
       <summary><strong>Abstract</strong></summary>
       <div>{{ post.content | markdownify }}</div>
@@ -63,18 +63,15 @@
     {% endif %}
     {% endif %}
 
-    {% if post.collection == 'portfolio' %}
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">
-    <p>{{ post.excerpt | markdownify | remove: '
-    <p>' | remove: '</p>' }}
-    <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
-    </p>
+    {% if post.excerpt and post.collection != 'publications' and post.collection != 'talks' %}
+    {% assign excerpt_html = post.excerpt | markdownify | remove: "<p>" | remove: "</p>" | strip %}
+    {% if site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ excerpt_html }} <strong><a
+          href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong></p>
+    {% else %}
+    <p class="archive__item-excerpt" itemprop="description">{{ excerpt_html }}</p>
     {% endif %}
     {% endif %}
-
 
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
     <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a
