@@ -5,6 +5,12 @@ permalink: /portfolio/
 author_profile: true
 ---
 
+{% if site.author.github %}
+<div class="wordwrap">You can also find my projects on <a href="https://github.com/{{site.author.github}}/">my GitHub
+        profile</a>.
+</div>
+{% endif %}
+
 {% include base_path %}
 
 
