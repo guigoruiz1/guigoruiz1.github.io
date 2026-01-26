@@ -1,13 +1,11 @@
 ---
 permalink: /
-title: "Home"
+title: "Welcome to my page!"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-**Welcome to my page!**
 
 I am a particle physicist specialised in neutrino detection with liquid argon time projection chambers (LArTPCs). I completed my PhD at the University of Manchester, where my research focuses on advancing LArTPC technology to improve the precision and reach of solar neutrino measurements, with data analysis playing a central role throughout my work. I also hold an MSc in Physics from University College London and a BSc in Physics with Astronomy from the University of São Paulo.
 
