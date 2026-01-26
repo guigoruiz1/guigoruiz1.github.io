@@ -24,12 +24,12 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Guilherme Ruiz"
-  pronouns         : # example: "she/her"
-  bio              : "Particle physicist, private aeroplane pilot and amateur coder."
+  pronouns         : # "he/him"
+  bio              : "Particle physicist by training, data analyst by habit, private pilot by passion."
   location         : "Manchester, UK"
   employer         : "The University of Manchester"
   uri              : # URL
-  email            : "guilherme.ruizferreira@postgrad.manchester.ac.uk" 
+  email            : "guilherme.guigoruiz@gmail.com" 
 
   # Academic websites
   academia         : # URL
