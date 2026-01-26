@@ -7,7 +7,7 @@
 {% endif %}
 
 {% if post.id %}
-{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
 {% else %}
 {% assign title = post.title %}
 {% endif %}
@@ -63,7 +63,7 @@
     {% endif %}
     {% endif %}
 
-    {%- comment -%}
+
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
@@ -73,7 +73,7 @@
     <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
     </p>
     {% endif %}
-    {%- endcomment -%}
+
 
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
     <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a
