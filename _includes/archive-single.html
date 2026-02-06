@@ -83,12 +83,12 @@
       {% if post.citation %}Recommended citation: {{ post.citation }}{% endif %}
       {% if downloads > 0 %}
       {% if post.paperurl %}
-      <a class="btn" href="{{ post.paperurl }}">{% if downloads == 1 %}Download{% else %}Download PDF{% endif %}</a>
+      <a class="btn" href="{{ post.paperurl }}" target="_blank">{% if downloads == 1 %}Download{% else %}Download PDF{% endif %}</a>
       {% endif %}
-      {% if post.slidesurl %}{% if post.paperurl %} | {% endif %}<a class="btn" href="{{ post.slidesurl }}">{% if
+      {% if post.slidesurl %}{% if post.paperurl %} | {% endif %}<a class="btn" href="{{ post.slidesurl }}" target="_blank">{% if
         downloads == 1 %}Download{% else %}Download Slides{% endif %}</a>{% endif %}
       {% if post.bibtexurl %}{% if post.paperurl or post.slidesurl %} | {% endif %}<a class="btn"
-        href="{{ post.bibtexurl }}">{% if downloads == 1 %}Download{% else %}Download BibTeX{% endif %}</a>{% endif %}
+        href="{{ post.bibtexurl }}" target="_blank">{% if downloads == 1 %}Download{% else %}Download BibTeX{% endif %}</a>{% endif %}
     </p>
     {% endif %}
     {% endif %}
