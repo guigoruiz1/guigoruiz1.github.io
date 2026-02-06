@@ -82,7 +82,6 @@
     <p>
       {% if post.citation %}Recommended citation: {{ post.citation }}{% endif %}
       {% if downloads > 0 %}
-      <br />
       {% if post.paperurl %}
       <a class="btn" href="{{ post.paperurl }}">{% if downloads == 1 %}Download{% else %}Download PDF{% endif %}</a>
       {% endif %}
