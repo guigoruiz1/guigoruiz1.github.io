@@ -25,9 +25,9 @@ layout: default
     <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
     {% endif %}
     {% if page.date %}
-    <meta itemprop="datePublished" content="{{ page.date | date: " %B %d, %Y" }}">{% endif %}
+    <meta itemprop="datePublished" content="{{ page.date | date: " %d %B %Y" }}">{% endif %}
     {% if page.modified %}
-    <meta itemprop="dateModified" content="{{ page.modified | date: " %B %d, %Y" }}">{% endif %}
+    <meta itemprop="dateModified" content="{{ page.modified | date: " %d %B %Y" }}">{% endif %}
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
@@ -40,7 +40,7 @@ layout: default
         {% if page.modified %}
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{
             site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time
-            datetime="{{ page.modified | date: " %Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+            datetime="{{ page.modified | date: " %Y-%m-%d" }}">{{ page.modified | date: "%d %B %Y" }}</time></p>
         {% endif %}
 
         {% if page.collection == 'teaching' %}
@@ -50,7 +50,7 @@ layout: default
         {% elsif page.date %}
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{
             site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time
-            datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y"
+            datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%d %B %Y"
             }}</time></p>
         {% endif %}
       </header>
@@ -59,45 +59,27 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
-        <p class="btn" style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            class="btn" href="{{ page.paperurl }}">Download Paper</a> | <a class="btn" href="{{ page.slidesurl }}">Download Slides</a> | <a
-            href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation and page.paperurl and page.slidesurl %}
-        <p class="btn" style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            class="btn" href="{{ page.paperurl }}">Download Paper</a> | <a class="btn" href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.citation and page.paperurl and page.bibtexurl %}
-        <p class="btn" style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            class="btn" href="{{ page.paperurl }}">Download Paper</a> | <a class="btn" href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation and page.paperurl %}
-        <p class="btn" style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            class="btn" href="{{ page.paperurl }}">Download Paper</a></p>
-        {% elsif page.citation and page.slidesurl and page.bibtexurl %}
-        <p class="btn" style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            class="btn" href="{{ page.slidesurl }}">Download Slides</a> | <a class="btn" href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation and page.slidesurl %}
-        <p class="btn" style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            class="btn" href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.slidesurl and page.bibtexurl %}
-        <p class="btn" style="font-size: smaller"><a class="btn" href="{{ page.slidesurl }}">Download Slides</a> | <a
-            class="btn" href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.paperurl and page.bibtexurl %}
-        <p class="btn" style="font-size: smaller"><a class="btn" href="{{ page.paperurl }}">Download Paper</a> | <a
-            class="btn" href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation and page.bibtexurl %}
-        <p class="btn" style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            class="btn" href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation %}
-        <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
-        {% elsif page.paperurl %}
-        <p style="font-size: smaller"><a class="btn" href="{{ page.paperurl }}">Download Paper</a></p>
-        {% elsif page.slidesurl %}
-        <p style="font-size: smaller"><a class="btn" href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.bibtexurl %}
-        <p style="font-size: smaller"><a class="btn" href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% assign downloads = 0 %}
+        {% if page.paperurl %}{% assign downloads = downloads | plus: 1 %}{% endif %}
+        {% if page.slidesurl %}{% assign downloads = downloads | plus: 1 %}{% endif %}
+        {% if page.bibtexurl %}{% assign downloads = downloads | plus: 1 %}{% endif %}
+
+        {% if page.citation or downloads > 0 %}
+        <p>
+        {% if page.citation %}Recommended citation: {{ page.citation }}{% endif %}
+        {% if downloads > 0 %}
+        {% if page.paperurl %}
+        <a class="btn" href="{{ page.paperurl }}" target="_blank">{% if downloads == 1 %}Download{% else %}Download PDF{% endif %}</a>
+        {% endif %}
+        {% if page.slidesurl %}{% if page.paperurl %} | {% endif %}<a class="btn" href="{{ page.slidesurl }}" target="_blank">{% if
+            downloads == 1 %}Download{% else %}Download Slides{% endif %}</a>{% endif %}
+        {% if page.bibtexurl %}{% if page.paperurl or page.slidesurl %} | {% endif %}<a class="btn"
+            href="{{ page.bibtexurl }}" target="_blank">{% if downloads == 1 %}Download{% else %}Download BibTeX{% endif %}</a>{% endif %}
+        </p>
+        {% endif %}
         {% endif %}
 
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label |
+        {% if page.link %}<div><a href="{{ page.link }}" target="_blank" class="btn">{{ site.data.ui-text[site.locale].ext_link_label |
             default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

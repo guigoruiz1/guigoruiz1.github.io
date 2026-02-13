@@ -25,9 +25,9 @@ layout: default
     <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
     {% endif %}
     {% if page.date %}
-    <meta itemprop="datePublished" content="{{ page.date | date: " %B %d, %Y" }}">{% endif %}
+    <meta itemprop="datePublished" content="{{ page.date | date: " %d %B %Y" }}">{% endif %}
     {% if page.modified %}
-    <meta itemprop="dateModified" content="{{ page.modified | date: " %B %d, %Y" }}">{% endif %}
+    <meta itemprop="dateModified" content="{{ page.modified | date: " %d %B %Y" }}">{% endif %}
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
@@ -39,10 +39,10 @@ layout: default
         {% endif %}
         {% if page.modified %}
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time
-            datetime="{{ page.modified | date: " %Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+            datetime="{{ page.modified | date: " %Y-%m-%d" }}">{{ page.modified | date: "%d %B %Y" }}</time></p>
         {% elsif page.date %}
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time
-            datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+            datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time></p>
         {% endif %}
         {% if page.type %}<p>{{page.type}} at {{ page.venue }}, {{page.location}} {% endif %}
 
