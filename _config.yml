@@ -8,12 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-GB"
-site_theme               : "air"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "My Homepage"
 title_separator          : "-"
 name                     : &name "Guilherme Ruiz"
-description              : &description "PhD in particle physics, private aeroplane pilot and amateur coder."
-url                      : https://ruizbad.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+description              : &description "PhD in particle physics, private aeroplane pilot and amateur coder."   # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : https://ruizbad.com # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "guigoruiz1/guigoruiz1.github.io"
 
@@ -24,7 +25,7 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Guilherme Ruiz"
-  pronouns         : # "he/him"
+  pronouns         : # example: "she/her"  
   bio              : "Particle physicist by training, data analyst by habit, private pilot by passion."
   location         : "Manchester, UK"
   employer         : "The University of Manchester"
@@ -39,9 +40,12 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0003-1411-3455"
   semantic         : # URL
+  ssrn             : # URL
   pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Guilherme-Ruiz-3"
   scopus           : # URL
+  zotero           : # URL
+
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
@@ -60,14 +64,14 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # guigoruiz1 # Username
+  instagram        : # Username
   lastfm           : # Username
-  linkedin         : guigoruiz1 # Username
+  linkedin         : "guigoruiz1" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
-  steam            : # guigoruiz1  # Username
+  steam            : # Username
   telegram         : # URL
   tumblr           : # Username
   twitter          : # Username for X / Twitter
@@ -85,17 +89,15 @@ publication_category:
   manuscripts:
     title: 'Journal Articles'    
   conferences:
-    title: 'Conference Proceedings'
-  thesis:
-    title: 'Thesis'
+    title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : true      #change to true to add link to talkmap on talks page
+talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -123,7 +125,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : true     # change to true to hide the RSS feed in the footer
+  hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -246,7 +248,6 @@ defaults:
       comments: true
       share: true
       related: true
-
   # _pages
   - scope:
       path: ""
@@ -255,14 +256,14 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
-  # - scope:
-  #     path: ""
-  #     type: teaching
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     share: true
-  #     comments: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _publications
   - scope:
       path: ""
@@ -294,14 +295,14 @@ defaults:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -353,7 +354,7 @@ tag_archive:
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
+# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
