@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-GB"
-site_theme               : "default"
+site_theme               : "air"
 title                    : "My Homepage"
 title_separator          : "-"
 name                     : &name "Guilherme Ruiz"
