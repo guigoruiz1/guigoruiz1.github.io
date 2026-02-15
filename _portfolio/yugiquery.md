@@ -1,6 +1,6 @@
 ---
 title: "YugiQuery"
-link: "https://github.com/guigoruiz1/yugiquery"
+link: "/yugiquery"
 collection: portfolio
 ---
 
