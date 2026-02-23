@@ -2,12 +2,12 @@
 title: "Solar Neutrino Detection with a Pixelated Liquid-Argon Time Projection Chamber"
 collection: publications
 category: thesis
-permalink: /publication/2025-12-12-Thesis
+permalink: /publication/2025-12-12-PhD-Thesis
 date: 2025-12-12
 authors: Guilher,e Ruiz Ferreira
 venue: 'The University of Manchester'
 paperurl: 'https://inspirehep.net/literature/3113668'
-# citation: 'Ruiz Ferreira, G. Thesis (2025)'
+# citation: 'Ruiz Ferreira, G. PhD Thesis (2025)'
 ---
 
 This thesis presents a study of low-energy solar neutrino detection using large-scale Liquid-Argon Time Projection Chambers (LArTPCs), focussing on novel pixelated readout technologies. Solar neutrinos offer a unique probe of fundamental neutrino properties and solar physics, but their detection in the MeV range is challenged by backgrounds. We investigate two complementary technologies: SoLAr, which integrates LArPix-based pixelated charge collection with Silicon Photomultipliers (SiPMs) in a hybrid anode design for simultaneous charge and light detection; and Q-Pix, a triggerless pixelated readout architecture based on charge integrate-reset circuits with local clocks, where Reset Time Differences encode ionisation waveforms via time-to-charge conversion. Two SoLAr prototypes were developed and operated, demonstrating VUV-sensitive SiPM performance in liquid argon and accurate charge-light signal matching with a charge detection threshold of ∼ 100 keV. We also implement a complete simulation and reconstruction framework, incorporating realistic detector geometry, electron transport, readout response, and detailed signal and background models, including intrinsic argon and radon progeny, as well as site-specific γ-ray and neutron fluxes. For Q-Pix, we demonstrate that with a pixel size of 4 × 4 mm² and a reset threshold of 1 fC (∼ 0.1475 MeV), full-scale operation produces data volumes below 1 PB per 10 ktonne−year. For SoLAr, assuming a shielded DUNE-like detector and 100 ktonne−year exposure, we project uncertainties of 0.90 × 10⁻⁵ eV² on Δm²₂₁ and 0.033 on sin² θ₁₂, improving to 0.46 × 10⁻⁵ eV² and 0.025 with 400 ktonne−year. At this higher exposure, we also obtain a day–night flux asymmetry at the level of (−5.6 ± 3.6) %. Combining Monte Carlo modelling, hardware validation, and advanced reconstruction techniques, this work establishes a path toward next-generation kilotonne-scale LArTPCs as observatories for precision solar neutrino physics.

@@ -91,7 +91,7 @@ publication_category:
   conferences:
     title: 'Conference Proceedings'
   thesis:
-    title: 'Thesis'
+    title: 'Theses'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
