@@ -5,7 +5,7 @@ category: thesis
 permalink: /publication/2025-12-12-PhD-Thesis
 date: 2025-12-12
 authors: Guilher,e Ruiz Ferreira
-venue: 'The University of Manchester'
+venue: 'PhD, <i>The University of Manchester</i>'
 paperurl: 'https://inspirehep.net/literature/3113668'
 # citation: 'Ruiz Ferreira, G. PhD Thesis (2025)'
 ---

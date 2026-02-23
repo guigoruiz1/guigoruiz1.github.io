@@ -46,7 +46,11 @@ layout: default
         {% if page.collection == 'teaching' %}
         <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
+        {% if page.category == 'thesis' %}
+        <p>{{ page.venue }}, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% else %}
         <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% endif %}
         {% elsif page.date %}
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{
             site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time
@@ -66,20 +70,24 @@ layout: default
 
         {% if page.citation or downloads > 0 %}
         <p>
-        {% if page.citation %}Recommended citation: {{ page.citation }}{% endif %}
-        {% if downloads > 0 %}
-        {% if page.paperurl %}
-        <a class="btn" href="{{ page.paperurl }}" target="_blank">{% if downloads == 1 %}Download{% else %}Download PDF{% endif %}</a>
-        {% endif %}
-        {% if page.slidesurl %}{% if page.paperurl %} | {% endif %}<a class="btn" href="{{ page.slidesurl }}" target="_blank">{% if
+          {% if page.citation %}Recommended citation: {{ page.citation }}{% endif %}
+          {% if downloads > 0 %}
+          {% if page.paperurl %}
+          <a class="btn" href="{{ page.paperurl }}" target="_blank">{% if downloads == 1 %}Download{% else %}Download
+            PDF{% endif %}</a>
+          {% endif %}
+          {% if page.slidesurl %}{% if page.paperurl %} | {% endif %}<a class="btn" href="{{ page.slidesurl }}"
+            target="_blank">{% if
             downloads == 1 %}Download{% else %}Download Slides{% endif %}</a>{% endif %}
-        {% if page.bibtexurl %}{% if page.paperurl or page.slidesurl %} | {% endif %}<a class="btn"
-            href="{{ page.bibtexurl }}" target="_blank">{% if downloads == 1 %}Download{% else %}Download BibTeX{% endif %}</a>{% endif %}
+          {% if page.bibtexurl %}{% if page.paperurl or page.slidesurl %} | {% endif %}<a class="btn"
+            href="{{ page.bibtexurl }}" target="_blank">{% if downloads == 1 %}Download{% else %}Download BibTeX{% endif
+            %}</a>{% endif %}
         </p>
         {% endif %}
         {% endif %}
 
-        {% if page.link %}<div><a href="{{ page.link }}" target="_blank" class="btn">{{ site.data.ui-text[site.locale].ext_link_label |
+        {% if page.link %}<div><a href="{{ page.link }}" target="_blank" class="btn">{{
+            site.data.ui-text[site.locale].ext_link_label |
             default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
