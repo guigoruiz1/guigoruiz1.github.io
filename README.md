@@ -1,4 +1,4 @@
-# My Personal Web Page
+# My Personal Website
 
 Forked from [academic pages](https://github.com/academicpages/academicpages.github.io).
 
