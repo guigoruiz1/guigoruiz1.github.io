@@ -4,4 +4,4 @@ link: "https://github.com/guigoruiz1/nbtools"
 collection: portfolio
 ---
 
-Collection of Jupyter notebook utilities to improve productivity and usability.
+Jupyter notebook management utilities: table of contents generation, heading numbering, notebook composition from templates, and NBConvert auto light/dark theme support.
