@@ -1,6 +1,6 @@
 ---
 title: "YugiAI"
-link: "/yugiai"
+link: "https://github.com/guigoruiz1/yugiai"
 collection: portfolio
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "YugiVit"
-link: "/yugivit"
+link: "https://github.com/guigoruiz1/yugivit"
 collection: portfolio
 ---
 
